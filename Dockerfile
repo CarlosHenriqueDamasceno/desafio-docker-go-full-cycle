@@ -8,6 +8,6 @@ RUN go build main.go
 
 FROM scratch
 
-COPY --from=build /usr/src/app .
+COPY --from=build /usr/src/app/main .
 
 ENTRYPOINT [ "./main" ]
